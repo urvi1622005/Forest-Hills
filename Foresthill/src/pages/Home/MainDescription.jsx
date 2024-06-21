@@ -18,14 +18,14 @@ const MainDescription = () => {
         paddingTop="3rem"
         backgroundColor="#F4F8F1"
         paddingBottom="6rem"
-        width="1280px"
+        width="100vw"
         alignContent={"Center"}
         justifyContent="center"
         textAlign={"center"}
       >
         <Description />
       </Box>
-      <Box textAlign="center"alignItems={"center"} justifyContent={"center"} color="var(--darkText)" width="1280px" backgroundColor="#F4F8F1">
+      <Box textAlign="center"alignItems={"center"} justifyContent={"center"} color="var(--darkText)" width="100vw" backgroundColor="#F4F8F1">
         <Flavour />
          <Roomscape />
         <Localities />

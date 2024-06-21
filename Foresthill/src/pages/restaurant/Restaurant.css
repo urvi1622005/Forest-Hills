@@ -1,0 +1,88 @@
+.navbar {
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .tab-item:hover {
+    color: #28a745;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #28a745;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .restaurant-image-main {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details {
+    width: 50%;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #28a745;
+  }
+  
+  .detail-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .detail-description {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .gallery-image {
+    width: 22%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.05);
+  }
+  

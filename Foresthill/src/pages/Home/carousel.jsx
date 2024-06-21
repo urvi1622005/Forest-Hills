@@ -10,11 +10,11 @@ import slider4 from '../../assets/Slider/slider4.jpg';
 import slider5 from '../../assets/Slider/slider5.jpg';
 
 const items = [
-  <img src={slider1} alt="Image 1" key="slider1" className="carousel-image" />,
-  <img src={slider2} alt="Image 2" key="slider2" className="carousel-image" />,
-  <img src={slider3} alt="Image 3" key="slider3" className="carousel-image" />,
-  <img src={slider4} alt="Image 4" key="slider4" className="carousel-image" />,
-  <img src={slider5} alt="Image 5" key="slider5" className="carousel-image" />,
+  <img src={slider1} style={{ width: "100vw"}} alt="Image 1" key="slider1" className="carousel-image" />,
+  <img src={slider2} style={{ width: "100vw"}}alt="Image 2" key="slider2" className="carousel-image" />,
+  <img src={slider3} style={{ width: "100vw"}} alt="Image 3" key="slider3" className="carousel-image" />,
+  <img src={slider4} style={{ width: "100vw"}}alt="Image 4" key="slider4" className="carousel-image" />,
+  <img src={slider5} style={{ width: "100vw"}}alt="Image 5" key="slider5" className="carousel-image" />,
 ];
 
 const Carousel = () => (
@@ -29,7 +29,7 @@ const Carousel = () => (
   >
     <Box
       position="absolute"
-      width="100%"
+      width="100vw"
       height="100%"
       display="flex"
       justifyContent="center"
