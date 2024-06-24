@@ -1,42 +1,42 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AiOutlineHome } from "react-icons/ai";
 import { IoIosRestaurant } from "react-icons/io";
 import { FaBed } from "react-icons/fa";
 import { GrGallery } from "react-icons/gr";
 import styled  from "styled-components";
-// import './nav.css'; // Make sure the path to your CSS file is correct
+// import './nav.css'; 
 
 const Nav = () => {
   return (
     <Main>
       <div className="navbar-container">
         <div className="nav-item">
-          <NavLink exact to="/" className="nav-link" activeClassName="active-link">
+          <NavLink as={Link} exact to="/" className="nav-link" activeClassName="active-link">
             <AiOutlineHome />
             <span>Home</span>
           </NavLink>
         </div>
         <div className="nav-item">
-          <NavLink to="/restaurant" className="nav-link" activeClassName="active-link">
+          <NavLink as={Link} exact to="/restaurant" className="nav-link" activeClassName="active-link">
             <IoIosRestaurant />
             <span>Restaurant</span>
           </NavLink>
         </div>
         <div className="nav-item">
-          <NavLink to="/rooms" className="nav-link" activeClassName="active-link">
+          <NavLink as={Link} exact to="/rooms" className="nav-link" activeClassName="active-link">
             <FaBed />
             <span>Rooms</span>
           </NavLink>
         </div>
         <div className="nav-item">
-          <NavLink to="/gallery" className="nav-link" activeClassName="active-link">
+          <NavLink as={Link} exact to="/gallery" className="nav-link" activeClassName="active-link">
             <GrGallery />
             <span>Gallery</span>
           </NavLink>
         </div>
         <div className="nav-item">
-          <NavLink to="/about" className="nav-link" activeClassName="active-link">
+          <NavLink as={Link} exact to="/about" className="nav-link" activeClassName="active-link">
             <span>About</span>
           </NavLink>
         </div>
@@ -93,4 +93,3 @@ const Main = styled.div`
     transition: all 0.1s ease;
   }
 `;
-

@@ -1,6 +1,6 @@
 import React from "react";
 import { Tabs, TabList, Tab, TabIndicator, Spacer, Grid, GridItem ,require} from '@chakra-ui/react';
-import { FaHome, FaUtensils, FaBed, FaImages, FaInfoCircle, FaUserFriends, FaWifi, FaWhatsapp, FaRegCalendarCheck } from 'react-icons/fa';
+import { FaHome, FaUtensils,LuBed , FaImages, FaInfoCircle, FaUserFriends,FaBed, FaWifi, FaWhatsapp, FaRegCalendarCheck } from 'react-icons/fa';
 import { MdFamilyRestroom } from 'react-icons/md';
 import { IoMdHeart } from 'react-icons/io';
 import { Link } from 'react-router-dom';

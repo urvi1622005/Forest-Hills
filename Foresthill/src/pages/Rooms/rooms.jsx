@@ -53,7 +53,7 @@ function Rooms() {
               <Spacer width="20px" />
               Friends
             </Tab>
-            <Tab as={Link} to="/couple" className="tab-item1" paddingY={1} paddingX={3}>
+            <Tab as={Link} to="/Couple" className="tab-item1" paddingY={1} paddingX={3}>
               <IoMdHeart />
               <Spacer width="20px" />
               Couples
@@ -124,5 +124,5 @@ function Rooms() {
     </>
   );
 }
-<React/>
+
 export default Rooms;

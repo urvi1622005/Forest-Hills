@@ -1,30 +1,30 @@
 import React from "react";
-import { Tabs, TabList, Tab, TabIndicator,require } from '@chakra-ui/react';
+import { Tabs, TabList, Tab, TabIndicator } from '@chakra-ui/react';
 import { FaHome, FaUtensils, FaBed, FaImages, FaInfoCircle } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link ,require} from 'react-router-dom';
+import './gallery.css';
 
-// Import images using require for bundlers like Webpack or proper relative paths if using another setup
-const restaurant1 = require('../../assets/gallery/restaurant/1.jpeg');
-const restaurant2 = require('../../assets/gallery/restaurant/2.jpeg');
-const restaurant3 = require('../../assets/gallery/restaurant/3.jpeg');
-const restaurant4 = require('../../assets/gallery/restaurant/4.jpeg');
+const restaurant1 = require('../../assets/Gallery/Restaurant/1.jpeg');
+const restaurant2 = require('../../assets/Gallery/Restaurant/2.jpeg');
+const restaurant3 = require('../../assets/Gallery/Restaurant/3.jpeg');
+const restaurant4 = require('../../assets/Gallery/Restaurant/4.jpeg');
 
-const room1 = require('../../assets/gallery/rooms/1.jpeg');
-const room2 = require('../../assets/gallery/rooms/2.jpeg');
-const room3 = require('../../assets/gallery/rooms/3.jpeg');
-const room4 = require('../../assets/gallery/rooms/4.jpeg');
+const room1 = require('../../assets/Gallery/rooms/1.jpeg');
+const room2 = require('../../assets/Gallery/rooms/2.jpeg');
+const room3 = require('../../assets/Gallery/rooms/3.jpeg');
+const room4 = require('../../assets/Gallery/rooms/4.jpeg');
 
-const nature1 = require('../../assets/gallery/nature/1.jpeg');
-const nature2 = require('../../assets/gallery/nature/2.jpeg');
-const nature3 = require('../../assets/gallery/nature/3.jpeg');
-const nature4 = require('../../assets/gallery/nature/4.jpeg');
+const nature1 = require('../../assets/Gallery/Nature/1.jpeg');
+const nature2 = require('../../assets/Gallery/Nature/2.jpeg');
+const nature3 = require('../../assets/Gallery/Nature/3.jpeg');
+const nature4 = require('../../assets/Gallery/Nature/4.jpeg');
 
-const pick1 = require('../../assets/gallery/picks/1.jpeg');
-const pick2 = require('../../assets/gallery/picks/2.jpeg');
-const pick3 = require('../../assets/gallery/picks/3.jpeg');
-const pick4 = require('../../assets/gallery/picks/4.jpeg');
+const pick1 = require('../../assets/Gallery/picks/1.jpeg');
+const pick2 = require('../../assets/Gallery/picks/2.jpeg');
+const pick3 = require('../../assets/Gallery/picks/3.jpeg');
+const pick4 = require('../../assets/Gallery/picks/4.jpeg');
 
-function GaLLery() {
+function Gallery() {
     return (
         <>
             <div className='navbar1'>
@@ -90,58 +90,10 @@ function GaLLery() {
                 <img className='gallery-image' src={pick4} alt='Pick 4' />
             </div>
 
-            {/* Internal CSS */}
-            <style>{`
-                .navbar1 {
-                    margin-bottom: 20px;
-                }
+        
 
-                .tab-item {
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    font-size: 1rem;
-                }
-
-                .resttax {
-                    text-align: center;
-                    font-size: 1.5rem;
-                    font-weight: bold;
-                    margin: 20px 0;
-                }
-
-                .nobold {
-                    text-align: center;
-                    font-size: 1.2rem;
-                    color: #555;
-                    margin-bottom: 20px;
-                }
-
-                .boldtext1 {
-                    text-align: center;
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                    margin: 10px 0;
-                }
-
-                .restlastimg {
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    gap: 20px;
-                    margin-bottom: 20px;
-                }
-
-                .gallery-image {
-                    width: 300px;
-                    height: 200px;
-                    object-fit: cover;
-                    border-radius: 10px;
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                }
-            `}</style>
         </>
     );
 }
-<React/>
-export default GaLLery;
+
+export default Gallery;

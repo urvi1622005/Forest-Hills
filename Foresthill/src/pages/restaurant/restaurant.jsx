@@ -1,12 +1,19 @@
 import React from 'react';
-import { Tabs, TabList, Tab, TabIndicator,require } from '@chakra-ui/react';
-import { FaHome, FaUtensils, FaBed, FaImages, FaInfoCircle } from 'react-icons/fa';
+import { Tabs, TabList, Tab, TabIndicator } from '@chakra-ui/react';
+import { FaHome, FaUtensils } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { LuChefHat } from 'react-icons/lu';
 import { FaBellConcierge } from 'react-icons/fa6';
 import { CgPlayListCheck } from 'react-icons/cg';
 import { IoPeople } from 'react-icons/io5';
 import { RiGalleryLine } from 'react-icons/ri';
+import img1 from '../../assets/restaurantimages/g1.png';
+import img2 from '../../assets/restaurantimages/g2.png';
+import img3 from '../../assets/restaurantimages/g3.png';
+import img4 from '../../assets/restaurantimages/g4.png';
+import img5 from '../../assets/restaurantimages/g5.png';
+
+
 import "./Restaurant.css";
 
 function Restaurant() {
@@ -21,15 +28,6 @@ function Restaurant() {
             <Tab as={Link} to="/restaurant" className="tab-item">
               <FaUtensils /> Restaurants
             </Tab>
-            <Tab as={Link} to="/rooms" className="tab-item">
-              <FaBed /> Rooms
-            </Tab>
-            <Tab as={Link} to="/gallery" className="tab-item">
-              <FaImages /> Gallery
-            </Tab>
-            <Tab as={Link} to="/about" className="tab-item">
-              <FaInfoCircle /> About
-            </Tab>
           </TabList>
           <TabIndicator mt='-1.5px' height='2px' bg='green.500' borderRadius='1px' />
         </Tabs>
@@ -40,8 +38,7 @@ function Restaurant() {
       </div>
 
       <div className="content">
-        <img className='restaurant-image-main' src={require('../../assets/gallery/restaurant/1.jpeg')} alt="Restaurant Image" />
-
+        <img className='restaurant-image-main' src={img1} alt="Restaurant Image" />
         <div className="details">
           <div className='detail-item'>
             <LuChefHat className='icon' />
@@ -86,13 +83,14 @@ function Restaurant() {
       </div>
       
       <div className='gallery'>
-        <img className='gallery-image' src={require('../../assets/gallery/restaurant/1.jpeg')} alt="Restaurant" />
-        <img className='gallery-image' src={require('../../assets/gallery/restaurant/2.jpeg')} alt="Restaurant" />
-        <img className='gallery-image' src={require('../../assets/gallery/restaurant/3.jpeg')} alt="Restaurant" />
-        <img className='gallery-image' src={require('../../assets/gallery/restaurant/4.jpeg')} alt="Restaurant" />
+        <img className='gallery-image' src={img1} alt="Restaurant" />
+        <img className='gallery-image' src={img2} alt="Restaurant" />
+        <img className='gallery-image' src={img3} alt="Restaurant" />
+        <img className='gallery-image' src={img4} alt="Restaurant" />
+        <img className='gallery-image' src={img5} alt="Restaurant" />
       </div>
     </>
   );
 }
-<React/>
+
 export default Restaurant;
