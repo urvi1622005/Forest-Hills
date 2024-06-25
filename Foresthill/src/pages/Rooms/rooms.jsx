@@ -1,13 +1,19 @@
 import React from "react";
-import { Tabs, TabList, Tab, TabIndicator, Spacer, Grid, GridItem ,require} from '@chakra-ui/react';
+import { Tabs, TabList, Tab, TabIndicator, Spacer, Grid, GridItem } from '@chakra-ui/react';
 import { FaHome, FaUtensils, FaBed, FaImages, FaInfoCircle, FaUserFriends, FaWifi, FaWhatsapp, FaRegCalendarCheck } from 'react-icons/fa';
 import { MdFamilyRestroom } from 'react-icons/md';
 import { IoMdHeart } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { PiNumberFourBold } from "react-icons/pi";
 import { LuBed } from "react-icons/lu";
-// import '../index.css';
-import "./room.css"; // Component-specific styles
+import './room.css'; // Component-specific styles
+
+// Import images
+import mainpicfamilyroom from '../../assets/rooms/family/mainpicfamilyroom.jpeg';
+import PIC1 from '../../assets/rooms/family/PIC1.png';
+import PIC2 from '../../assets/rooms/family/PIC2.png';
+import PIC3 from '../../assets/rooms/family/PIC3.png';
+import PIC4 from '../../assets/rooms/family/PIC4.jpeg';
 
 function Rooms() {
   return (
@@ -72,19 +78,19 @@ function Rooms() {
           gap={4}
         >
           <GridItem borderRadius="20px" rowSpan={2} colSpan={2} bg="tomato">
-            <img src={require('../../assets/rooms/family/mainpicfamilyroom.jpeg')} alt='Family Room' className='grid-image' />
+            <img src={mainpicfamilyroom} alt='Family Room' className='grid-image' />
           </GridItem>
           <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
-            <img src={require('../../assets/rooms/family/PIC1.png')} alt='Family Room' className='grid-image' />
+            <img src={PIC1} alt='Family Room' className='grid-image' />
           </GridItem>
           <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
-            <img src={require('../../assets/rooms/family/PIC2.png')} alt='Family Room' className='grid-image' />
+            <img src={PIC2} alt='Family Room' className='grid-image' />
           </GridItem>
           <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
-            <img src={require('../../assets/rooms/family/PIC3.png')} alt='Family Room' className='grid-image' />
+            <img src={PIC3} alt='Family Room' className='grid-image' />
           </GridItem>
           <GridItem borderRadius="20px" colSpan={1} rowSpan={1} bg="papayawhip">
-            <img src={require('../../assets/rooms/family/PIC4.jpeg')} alt='Family Room' className='grid-image' />
+            <img src={PIC4} alt='Family Room' className='grid-image' />
           </GridItem>
         </Grid>
       </div>
@@ -95,15 +101,15 @@ function Rooms() {
         <div className='boldtext1'>(Large Rooms)</div>
         <div className='nobold1'>
           Designed for comfort, our Family Deluxe Room accommodates up to 4 guests.
-          <Spacer height={5}/>
+          <Spacer height={5} />
           Enjoy the convenience of room service, with charges applicable.
-          <Spacer height={5}/>
+          <Spacer height={5} />
           Stay connected with complimentary WiFi services during your stay.
-          <Spacer height={5}/>
+          <Spacer height={5} />
           Revel in the beauty of your surroundings with a picturesque view from the room.
-          <Spacer height={5}/>
+          <Spacer height={5} />
           Two stylish sofas and a table enhance the ambiance, providing a cozy seating area.
-          <Spacer height={5}/>
+          <Spacer height={5} />
         </div>
         <div className='boldtext1'>
           Need extra sleeping arrangements? Additional mattresses are available to ensure a comfortable stay for everyone.

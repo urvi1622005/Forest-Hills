@@ -1,10 +1,18 @@
 import React from "react";
-import { Tabs, TabList, Tab, TabIndicator, Spacer, Grid, GridItem,require } from '@chakra-ui/react';
-import { FaHome, FaUtensils,LuBed, FaBed, FaImages, FaInfoCircle, FaUserFriends, FaWifi, FaWhatsapp, FaRegCalendarCheck } from 'react-icons/fa';
+import { Tabs, TabList, Tab, TabIndicator, Spacer, Grid, GridItem } from '@chakra-ui/react';
+import { FaHome, FaUtensils, FaBed, FaImages, FaInfoCircle, FaUserFriends, FaWifi, FaWhatsapp, FaRegCalendarCheck } from 'react-icons/fa';
 import { MdFamilyRestroom } from 'react-icons/md';
 import { IoMdHeart } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import './friends.css'; // Component-specific styles
+import { LuBed } from "react-icons/lu";
+import '../Rooms/friends.css'; 
+
+// Import images
+import img1 from '../../assets/rooms/friend/1.png';
+import img2 from '../../assets/rooms/friend/2.png';
+import img3 from '../../assets/rooms/friend/3.png';
+import img4 from '../../assets/rooms/friend/4.png';
+import img5 from '../../assets/rooms/friend/5.png';
 
 function Friends() {
   return (
@@ -69,19 +77,19 @@ function Friends() {
           gap={4}
         >
           <GridItem borderRadius={20} rowSpan={2} colSpan={2} bg="tomato">
-            <img src={require('../../assets/rooms/friend/1.png')} alt='Friends Room' className='grid-image' />
+            <img src={img1} alt='Friends Room' className='grid-image' />
           </GridItem>
           <GridItem borderRadius={20} colSpan={1} rowSpan={1} bg="papayawhip">
-            <img src={require('../../assets/rooms/friend/2.png')} alt='Friends Room' className='grid-image' />
+            <img src={img2} alt='Friends Room' className='grid-image' />
           </GridItem>
           <GridItem borderRadius={20} colSpan={1} rowSpan={1} bg="papayawhip">
-            <img src={require('../../assets/rooms/friend/3.png')} alt='Friends Room' className='grid-image' />
+            <img src={img3} alt='Friends Room' className='grid-image' />
           </GridItem>
           <GridItem borderRadius={20} colSpan={1} rowSpan={1} bg="papayawhip">
-            <img src={require('../../assets/rooms/friend/4.png')} alt='Friends Room' className='grid-image' />
+            <img src={img4} alt='Friends Room' className='grid-image' />
           </GridItem>
           <GridItem borderRadius={20} colSpan={1} rowSpan={1} bg="papayawhip">
-            <img src={require('../../assets/rooms/friend/5.png')} alt='Friends Room' className='grid-image' />
+            <img src={img5} alt='Friends Room' className='grid-image' />
           </GridItem>
         </Grid>
       </div>

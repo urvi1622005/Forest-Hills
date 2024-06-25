@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
 import React from "react";
 import { ChakraProvider } from '@chakra-ui/react';
 
@@ -17,7 +17,7 @@ import './App.css'; // Global styles
 function App() {
   return (
     <ChakraProvider> 
-      {/* <BrowserRouter> */}
+       {/* <BrowserRouter>  */}
         <div className="app-container">
           <Nav /> 
 

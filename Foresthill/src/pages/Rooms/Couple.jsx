@@ -1,17 +1,18 @@
 import React from "react";
-import { Tabs, TabList, Tab, TabIndicator, Spacer, Grid, GridItem ,require} from '@chakra-ui/react';
-import { FaHome, FaUtensils,LuBed , FaImages, FaInfoCircle, FaUserFriends,FaBed, FaWifi, FaWhatsapp, FaRegCalendarCheck } from 'react-icons/fa';
+import { Tabs, TabList, Tab, TabIndicator, Spacer, Grid, GridItem } from '@chakra-ui/react';
+import { FaHome, FaUtensils, FaBed, FaImages, FaInfoCircle, FaUserFriends, FaWifi, FaWhatsapp, FaRegCalendarCheck } from 'react-icons/fa';
 import { MdFamilyRestroom } from 'react-icons/md';
 import { IoMdHeart } from 'react-icons/io';
 import { Link } from 'react-router-dom';
-import './Couple.css'; // Importing component-specific CSS
+import { LuBed } from "react-icons/lu";
+import './Couple.css';
 
-// Import images using require for bundlers like Webpack
-const img1 = require('../../assets/rooms/couple/1.png');
-const img2 = require('../../assets/rooms/couple/2.png');
-const img3 = require('../../assets/rooms/couple/3.png');
-const img4 = require('../../assets/rooms/couple/4.png');
-const img5 = require('../../assets/rooms/couple/5.png');
+// Import images
+import img1 from '../../assets/rooms/couple/1.png';
+import img2 from '../../assets/rooms/couple/2.png';
+import img3 from '../../assets/rooms/couple/3.png';
+import img4 from '../../assets/rooms/couple/4.png';
+import img5 from '../../assets/rooms/couple/5.png';
 
 function Couple() {
   return (
