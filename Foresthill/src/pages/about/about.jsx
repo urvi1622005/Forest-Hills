@@ -3,6 +3,7 @@ import { Tabs, TabList, Tab, TabIndicator } from '@chakra-ui/react';
 import { FaHome, FaUtensils, FaBed, FaImages, FaInfoCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import GreenLast from './greenLast.jsx';
+import Strip from '../Home/Strip.jsx';
 
 // Import the Poppins font from Google Fonts
 // import "@fontsource/poppins"; 
@@ -50,6 +51,7 @@ function About() {
       </div>
 
       <GreenLast />
+    
       
       <style>{`
         .navbar1 {
@@ -97,8 +99,11 @@ function About() {
           line-height: 1.8;
         }
       `}</style>
+      <Strip/>
     </>
   );
+
 }
 <React/>
+
 export default About;

@@ -3,6 +3,7 @@ import { Tabs, TabList, Tab, TabIndicator } from '@chakra-ui/react';
 import { FaHome, FaUtensils, FaBed, FaImages, FaInfoCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './gallery.css';
+import Strip from '../Home/Strip.jsx';
 
 // Ensure these paths are correct
 import restaurant1 from '../../assets/Gallery/Restaurant/1.jpeg';
@@ -90,6 +91,7 @@ function Gallery() {
                 <img className="gallery-image" src={pick3} alt="Pick 3" />
                 <img className="gallery-image" src={pick4} alt="Pick 4" />
             </div>
+            <Strip />
         </>
     );
 }

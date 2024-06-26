@@ -6,6 +6,7 @@ import { IoMdHeart } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { PiNumberFourBold } from "react-icons/pi";
 import { LuBed } from "react-icons/lu";
+import Strip from '../Home/Strip.jsx';
 import './room.css'; // Component-specific styles
 
 // Import images
@@ -127,6 +128,7 @@ function Rooms() {
           <button className="button more-info"><FaWhatsapp className="icon" /> Contact Us</button>
         </div>
       </div>
+      <Strip/>
     </>
   );
 }

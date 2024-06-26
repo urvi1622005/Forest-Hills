@@ -7,6 +7,7 @@ import { FaBellConcierge } from 'react-icons/fa6';
 import { CgPlayListCheck } from 'react-icons/cg';
 import { IoPeople } from 'react-icons/io5';
 import { RiGalleryLine } from 'react-icons/ri';
+import Strip from '../Home/Strip';
 import img1 from '../../assets/restaurantimages/g1.png';
 import img2 from '../../assets/restaurantimages/g2.png';
 import img3 from '../../assets/restaurantimages/g3.png';
@@ -89,6 +90,7 @@ function Restaurant() {
         <img className='gallery-image' src={img4} alt="Restaurant" />
         <img className='gallery-image' src={img5} alt="Restaurant" />
       </div>
+      <Strip/>
     </>
   );
 }

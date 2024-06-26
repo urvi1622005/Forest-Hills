@@ -5,6 +5,7 @@ import { MdFamilyRestroom } from 'react-icons/md';
 import { IoMdHeart } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { LuBed } from "react-icons/lu";
+import Strip from "../Home/Strip";
 import './Couple.css';
 
 // Import images
@@ -124,6 +125,7 @@ function Couple() {
           <button className="button more-info"><FaWhatsapp className="icon" /> Contact Us</button>
         </div>
       </div>
+      <Strip/>
     </>
   );
 }
